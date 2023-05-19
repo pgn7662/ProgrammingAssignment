@@ -39,79 +39,79 @@ is checked whenever the index is equals to the slidingWindowPeriod it will be eq
 
 **Test Case 1:**
 
-2
-5
-1 2 4 5 6 7 8 9
-1 Allowed
-2 Allowed
-4 Blocked
-5 Blocked
-6 Blocked
-7 Allowed
-8 Allowed
+2\
+5\
+1 2 4 5 6 7 8 9\
+1 Allowed\
+2 Allowed\
+4 Blocked\
+5 Blocked\
+6 Blocked\
+7 Allowed\
+8 Allowed\
 9 Blocked
 
 **Test Case 2:**
 
-1
-10
-1 2 3 5 7 9 13 46 78 56
-1 Allowed
-2 Blocked
-3 Blocked
-5 Blocked
-7 Blocked
-9 Blocked
-13 Blocked
-46 Blocked
-78 Blocked
+1\
+10\
+1 2 3 5 7 9 13 46 78 56\
+1 Allowed\
+2 Blocked\
+3 Blocked\
+5 Blocked\
+7 Blocked\
+9 Blocked\
+13 Blocked\
+46 Blocked\
+78 Blocked\
 56 Blocked
 
 **Test Case 3:**
 
-0
-1
-1 7 9 21 30 45 48 51
-1 Blocked
-7 Blocked
-9 Blocked
-21 Blocked
-30 Blocked
-45 Blocked
-48 Blocked
-51 Blocked
+0\
+1\
+1 7 9 21 30 45 48 51\
+1 Blocked\
+7 Blocked\
+9 Blocked\
+21 Blocked\
+30 Blocked\
+45 Blocked\
+48 Blocked\ 
+51 Blocked\
 
 **Test Case 4:**
 
-5
-1
-1 8 16 20 35 40 41 42 45
-1 Allowed
-8 Allowed
-16 Allowed
-20 Allowed
-35 Allowed
-40 Allowed
-41 Allowed
-42 Allowed
-45 Allowed
+5\
+1\
+1 8 16 20 35 40 41 42 45\
+1 Allowed\
+8 Allowed\
+16 Allowed\
+20 Allowed\
+35 Allowed\
+40 Allowed\
+41 Allowed\
+42 Allowed\
+45 Allowed\
 
 **Test Case 5 :**
 
-4
-8
-1 12 13 42 50 56 57 68 69 70 123
-1 Allowed
-12 Allowed
-13 Allowed
-42 Allowed
-50 Blocked
-56 Blocked
-57 Blocked
-68 Blocked
-69 Allowed
-70 Allowed
-123 Allowed
+4\
+8\
+1 12 13 42 50 56 57 68 69 70 123\
+1 Allowed\
+12 Allowed\
+13 Allowed\
+42 Allowed\
+50 Blocked\
+56 Blocked\
+57 Blocked\
+68 Blocked\
+69 Allowed\
+70 Allowed\
+123 Allowed\
 
 
 
