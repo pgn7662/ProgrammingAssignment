@@ -1,0 +1,7 @@
+**Problem Statement**\
+Create a rate limiter program using a sliding window which allows/blocks request based on
+timestamps. Program will receive sequence of timestamps via arguments. For each timestamp it has
+to output allowed/blocked based on the sliding window.
+Sliding window to have 2 configurations,\
+R: maximum number of requests allowed in sliding window\
+S: sliding window time period in seconds\
