@@ -3,7 +3,8 @@
 Create a rate limiter program using a sliding window which allows/blocks request based on
 timestamps. Program will receive sequence of timestamps via arguments. For each timestamp it has
 to output allowed/blocked based on the sliding window.
-Sliding window to have 2 configurations,\
+Sliding window to have 2 configurations,
+
 R: maximum number of requests allowed in sliding window\
 S: sliding window time period in seconds
 
@@ -34,6 +35,25 @@ An integer variable is named as index to check whether the element will be prese
 of the timeStampsSequence array. An if-else condition is used check if the index is less than the maximumNumberOfRequests, than the number can be allowed to the sliding window
 and printed as "Allowed" or else it blocked from the sliding window and output is printed as "Blocked". Each time of the for each loop the index is updated by 1 and an if condition
 is checked whenever the index is equals to the slidingWindowPeriod it will be equal to zero.
+
+**Pseudo Code**
+
+Start\
+  getInput maxmimumNumberOfRequests\
+  getInput slidingWindowPeriod\
+  getInput timeStampSequence\
+  index = 0\
+  loop timeStamp in timeStampSequence:\
+    if index == slidingWindowPeriod\
+        i = 0\
+    if index < maximumNumberOfRequests\
+        print timeStamp "Allowed"\
+    else\
+        print timeStamp "Allowed"\
+  index = index + 1\
+End
+
+
 
 ### Test Cases
 
@@ -78,8 +98,8 @@ is checked whenever the index is equals to the slidingWindowPeriod it will be eq
 21 Blocked\
 30 Blocked\
 45 Blocked\
-48 Blocked\ 
-51 Blocked\
+48 Blocked\
+51 Blocked
 
 **Test Case 4:**
 
@@ -94,7 +114,7 @@ is checked whenever the index is equals to the slidingWindowPeriod it will be eq
 40 Allowed\
 41 Allowed\
 42 Allowed\
-45 Allowed\
+45 Allowed
 
 **Test Case 5 :**
 
@@ -111,7 +131,7 @@ is checked whenever the index is equals to the slidingWindowPeriod it will be eq
 68 Blocked\
 69 Allowed\
 70 Allowed\
-123 Allowed\
+123 Allowed
 
 
 
