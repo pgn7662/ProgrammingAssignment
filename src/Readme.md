@@ -30,29 +30,31 @@ The program should provide the output "allowed" or "blocked" for each timestamp,
 
 **Version**: Java Version "18.0.2"
 
+
+**Pseudo Code**
+
+Start\
+getInput maxmimumNumberOfRequests\
+getInput slidingWindowPeriod\
+getInput timeStampSequence\
+index = 0\
+loop timeStamp in timeStampSequence:\
+if index == slidingWindowPeriod\
+i = 0\
+if index < maximumNumberOfRequests\
+print timeStamp "Allowed"\
+else\
+print timeStamp "Allowed"\
+index = index + 1\
+End
+
+**Explanation**
+
 A function is defined findRateLimit which intakes three parameters timeStampSequence as Array, maximumNumberOfRequests as Integer and slidingWindowPeriod as Integer. 
 An integer variable is named as index to check whether the element will be present in the sliding window or not. A for each loop is used to iterate through the elements 
 of the timeStampsSequence array. An if-else condition is used check if the index is less than the maximumNumberOfRequests, than the number can be allowed to the sliding window
 and printed as "Allowed" or else it blocked from the sliding window and output is printed as "Blocked". Each time of the for each loop the index is updated by 1 and an if condition
 is checked whenever the index is equals to the slidingWindowPeriod it will be equal to zero.
-
-**Pseudo Code**
-
-Start\
-  getInput maxmimumNumberOfRequests\
-  getInput slidingWindowPeriod\
-  getInput timeStampSequence\
-  index = 0\
-  loop timeStamp in timeStampSequence:\
-    if index == slidingWindowPeriod\
-        i = 0\
-    if index < maximumNumberOfRequests\
-        print timeStamp "Allowed"\
-    else\
-        print timeStamp "Allowed"\
-  index = index + 1\
-End
-
 
 
 ### Test Cases
