@@ -37,7 +37,7 @@ is checked whenever the index is equals to the slidingWindowPeriod it will be eq
 
 ### Test Cases
 
-**Test Case 1: **
+**Test Case 1:**
 
 2
 5
